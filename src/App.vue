@@ -1,5 +1,5 @@
 <template>
-  <ion-app id="app">
+  <ion-app>
     <ion-router-outlet />
   </ion-app>
 </template>
@@ -16,9 +16,3 @@ export default defineComponent({
   }
 });
 </script>
-
-<style>
-#app {
-  background-color: transparent !important;
-}
-</style>
