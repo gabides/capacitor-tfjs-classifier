@@ -971,6 +971,13 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@capacitor-community/camera-preview@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@capacitor-community/camera-preview/-/camera-preview-2.1.0.tgz#1a66ff6991c1d5502d079d4f997539cc0edee15c"
+  integrity sha512-A2GtopTAPot1t/LYOaUxBwfmSWTEvFMeMngNhVDXCzEcwm1cs9C43fqrNS952Yf2zd14Y2RrsU+TiCM0qJR7Ug==
+  dependencies:
+    "@capacitor/core" latest
+
 "@capacitor/android@3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-3.5.1.tgz#d81ec82f84ab7f0abeadb4cc100e6a3820197d65"
@@ -1003,7 +1010,7 @@
     tslib "^2.1.0"
     xml2js "^0.4.23"
 
-"@capacitor/core@3.5.1":
+"@capacitor/core@3.5.1", "@capacitor/core@latest":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-3.5.1.tgz#49d48c0261d811a4d8c43d89d8a10bd519675bd2"
   integrity sha512-UTROxB7q/hZBnhDLcCN7mVsAX3SxXNMhVuPbtddsDOUCm4hExLXN62gPD7rjgmumhfHMjeXmkw/EfRzSjttL1g==
