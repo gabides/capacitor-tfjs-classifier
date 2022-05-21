@@ -1,0 +1,7 @@
+{
+  "name": "capacitor-tfjs-classifier",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
