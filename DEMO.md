@@ -1,12 +1,15 @@
 # Capacitor-tfjs-classifier - Full Demo steps
 
 ## Step 0 - prepare setup
+```bash
 yarn add @ionic/cli@latest
 yarn ionic config set -g npmClient yarn
-
+```
 ### create repo from template
+```bash
 yarn ionic start capacitor-tfjs-classifier tabs --name capacitor-tfjs-classifier --type vue
 cd ./capacitor-tfjs-classifier
+```
 
 ### add native platforms
 ```bash
