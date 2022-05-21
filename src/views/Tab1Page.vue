@@ -23,13 +23,6 @@
               </ion-card-content>
             </ion-card>
           </ion-row>
-          <ion-row  v-if="!this.isCameraOn" class="ion-align-self-center ion-justify-content-center">
-            <ion-button :onclick="() => startCamera(true)" color="primary">Front Camera</ion-button>
-            <ion-button :onclick="() => startCamera(false)" color="primary">Rear Camera</ion-button>
-          </ion-row>
-          <ion-row  v-if="this.isCameraOn" class="ion-align-self-center ion-justify-content-center">
-            <ion-button :onclick="stopCamera" color="primary">Stop Camera</ion-button>
-          </ion-row>  
         </ion-col>
     </ion-grid>
     </ion-content>
@@ -38,13 +31,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardContent, IonCardTitle, IonCardHeader, IonGrid, IonCol, IonRow, IonButton } from '@ionic/vue';
-import { CameraPreview, CameraPreviewOptions } from '@capacitor-community/camera-preview';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardContent, IonCardTitle, IonCardHeader, IonGrid, IonCol, IonRow } from '@ionic/vue';
 
 
 export default defineComponent({
   name: 'Tab1Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonCard, IonCardContent, IonCardTitle, IonCardHeader, IonGrid, IonCol, IonRow, IonButton },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonCard, IonCardContent, IonCardTitle, IonCardHeader, IonGrid, IonCol, IonRow },
   data: function () {
     return {
       modelReady: false,
@@ -53,23 +45,6 @@ export default defineComponent({
       detectionConfidence: 0,
       isCameraOn: false
     }
-  },
-  methods: {
-    async startCamera(frontCamera = false) {
-      const cameraPreviewOptions: CameraPreviewOptions = {
-        toBack: true,
-        position: frontCamera ? 'front': 'rear',
-        width: window.screen.width,
-        height: 0.7 * window.screen.height,
-        y: 0.7 * window.screen.height
-      };
-      await CameraPreview.start(cameraPreviewOptions);
-      this.isCameraOn = true;
-    },
-    async stopCamera() {
-      await CameraPreview.stop();
-      this.isCameraOn = false
-    },
   }
 });
 </script>
