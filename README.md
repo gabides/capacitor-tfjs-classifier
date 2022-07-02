@@ -16,3 +16,5 @@ yarn cap run ios
 
 This demo was first built for [Ioniconf 2022](https://ionic.io/ioniconf)
 
+[talk replay](https://www.youtube.com/watch?v=5qKhm0O_UsY)
+
