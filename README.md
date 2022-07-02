@@ -1,4 +1,4 @@
-# capacitor-tfjs-classifier
+# AI at the tip of your fingers
 
 ## Install and run
 
